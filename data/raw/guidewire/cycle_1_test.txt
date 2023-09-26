@@ -1,0 +1,3 @@
+/Users/charissaabegailmorales/Documents/Thesis/GuidewireDetection/data/raw/guidewire/MVI_6971.MP4
+/Users/charissaabegailmorales/Documents/Thesis/GuidewireDetection/data/raw/guidewire/MVI_6931.MP4
+/Users/charissaabegailmorales/Documents/Thesis/GuidewireDetection/data/raw/guidewire/MVI_6928.MP4
