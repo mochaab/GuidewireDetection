@@ -36,6 +36,7 @@ def create_folder(folder_path):
 
 def extract_frames(video_file_path, target_path, basename):
     # Defining VideoCapture object
+    # video = cv2.VideoCapture(video_file_path)
     video = cv2.VideoCapture(video_file_path)
 
     # Check if the video file was successfully opened
@@ -67,7 +68,7 @@ def extract_frames(video_file_path, target_path, basename):
         gray_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
         #frame filename
-        frame_filename = os.path.join(target_path, basename+"_"+str(i))
+        frame_filename = os.path.join(target_path, basename+"_"+str(i)+".jpg")
 
         # Save the frame as an image
         cv2.imwrite(frame_filename, gray_frame)
@@ -77,33 +78,37 @@ def extract_frames(video_file_path, target_path, basename):
     video.release()
     cv2.destroyAllWindows()
 
+# os.chdir(os.path.abspath(os.sep))
+
 
 
 src_path = os.path.join(os.getcwd(),"data/raw/guidewire")
 target_path = os.path.join(os.getcwd(),"data/raw/")
 os.chdir(src_path)
-src_texts = [os.path.join(src_path,filename) for filename in os.listdir() if filename.endswith('.txt')]     
-
-
+# src_texts = [os.path.join(src_path,filename) for filename in os.listdir() if filename.endswith('.txt')]     
+src_texts = ["cycle_1_val.txt","cycle_1_train.txt"]  
 
 # iterate through src_text
 for fn in src_texts:
     # create a folder if train, text or validation
-    folder_name = create_folder(os.path.splitext(os.path.basename(fn))[0])
+  
+    # print(os.path.splitext(os.path.basename(fn))[0])
+    folder_name = create_folder(os.path.join(target_path, os.path.splitext(os.path.basename(fn))[0]))
     # read text file
     try:
         # Open the file in read mode
         with open(fn, 'r') as file:
             print(fn,"File content line by line:")
             for line in file:
-                # print(line.strip())  # Print each line (stripping newline characters)
+                print(line.strip())  # Print each line (stripping newline characters)
                 # print("file exists?", os.path.exists(line))
-                print("---")
-                print(line.strip())
-                print("file exists?", os.path.exists(line.strip()))
-                print("---")
-                basename = os.path.splitext(line)[0]
-                extract_frames(line, target_path, basename)
+                # print("---")
+                # print(line.strip())
+                # print("file exists?", os.path.exists(line.strip()))
+                # print("---")
+                fn_base = os.path.splitext(os.path.basename(line.strip()))[0]
+                extract_frames(line.strip(), folder_name, fn_base)
+                # break
     except FileNotFoundError:
         print("File not found.")
 
