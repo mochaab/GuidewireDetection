@@ -79,7 +79,11 @@ file_list = sorted(file_list, key=get_capture_number)
 # file_list = sorted(filtered_files, key=get_capture_number)
 
 # # ------------------------------
-
+src_path = os.path.join(os.getcwd(),"data/raw/guidewire")
+target_path = os.path.join(os.getcwd(),"data/raw/")
+os.chdir(src_path)
+# src_texts = [os.path.join(src_path,filename) for filename in os.listdir() if filename.endswith('.txt')]     
+src_texts = ["cycle_1_val.txt","cycle_1_train.txt"]  
 
 # Iterate over the files in the directory
 for filename in file_list:
