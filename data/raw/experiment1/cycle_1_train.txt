@@ -1,0 +1,4 @@
+/home/nami/Dokumente/DeepLearningProjects/GuidewireDetection/data/raw/cycle_1_train/MVI_6926_146.jpg
+/home/nami/Dokumente/DeepLearningProjects/GuidewireDetection/data/raw/cycle_1_train/MVI_6927_231.jpg
+/home/nami/Dokumente/DeepLearningProjects/GuidewireDetection/data/raw/cycle_1_train/MVI_6928_244.jpg
+/home/nami/Dokumente/DeepLearningProjects/GuidewireDetection/data/raw/cycle_1_train/MVI_6931_199.jpg
