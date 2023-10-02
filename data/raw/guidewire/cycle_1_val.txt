@@ -1,4 +1,4 @@
-/Users/charissaabegailmorales/Documents/Thesis/GuidewireDetection/data/raw/guidewire/MVI_6929.MP4
-/Users/charissaabegailmorales/Documents/Thesis/GuidewireDetection/data/raw/guidewire/MVI_6936.MP4
-/Users/charissaabegailmorales/Documents/Thesis/GuidewireDetection/data/raw/guidewire/MVI_6935.MP4
-/Users/charissaabegailmorales/Documents/Thesis/GuidewireDetection/data/raw/guidewire/MVI_6975.MP4
+/home/nami/Dokumente/DeepLearningProjects/GuidewireDetection/data/raw/guidewire/MVI_6929.MP4
+/home/nami/Dokumente/DeepLearningProjects/GuidewireDetection/data/raw/guidewire/MVI_6936.MP4
+/home/nami/Dokumente/DeepLearningProjects/GuidewireDetection/data/raw/guidewire/MVI_6935.MP4
+/home/nami/Dokumente/DeepLearningProjects/GuidewireDetection/data/raw/guidewire/MVI_6975.MP4

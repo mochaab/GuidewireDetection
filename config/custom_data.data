@@ -1,0 +1,5 @@
+classes = 1
+train = "/data/raw/cycle_1_train/cycle_1_train.txt"
+valid = "/data/raw/cycle_1_val/cycle_1_val.txt"
+names = "/data/raw/classes.names"
+backup = backup

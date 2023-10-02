@@ -1,0 +1,1 @@
+/home/nami/Dokumente/DeepLearningProjects/GuidewireDetection/data/raw/cycle_1_train/MVI_6926_146.jpg
