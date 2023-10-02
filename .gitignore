@@ -13,7 +13,7 @@
 *.pyc
 *.bak
 mnist/
-data/
+# data/
 caffe/
 grasp/
 images/
@@ -31,7 +31,7 @@ ninja.zip
 vcpkg_installed/
 !build/darknet/YoloWrapper.cs
 .fuse*
-*.weights
+#*.weights
 build/*.cmake
 build/*.ninja
 build/*.txt
